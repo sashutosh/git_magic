@@ -30,4 +30,11 @@ have only the CLI based tools
     
     Template
     git checkout -b <new_branch_name> tags/<tag_name>    
+    
+ 5. Get a patch for a commit to apply in another branch.
+      Context - You made committed changes in a shared branch. There are other changes on top of it. You want to cherry pick your commit and have it exported as a patch file so that you can mail it to your friend and apply it in his branch.
+      git log // Fetch the sha of the commit from history
+      git format-patch -1 <sha> //Will create a pathc file in the current directory
+    
+      git am < file.patch
 
