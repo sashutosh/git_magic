@@ -53,3 +53,10 @@ have only the CLI based tools
                          
      git reset 'HEAD@{1}'
    
+9. Delete a local branch
+                         
+      git branch -d <branchname>
+    
+10. Delete a remote branch
+    
+      git push -d origin <branchname>
